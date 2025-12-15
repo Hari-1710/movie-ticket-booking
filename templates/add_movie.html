@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="container">
+    <h2>Add Movie</h2>
+    <form method="post">
+        <input name="name" placeholder="Movie Name">
+        <input name="time" placeholder="Show Time">
+        <input name="price" type="number" placeholder="Ticket Price">
+        <button>Add Movie</button>
+    </form>
+</div>
+{% endblock %}

@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="container">
+    <h2>Available Movies</h2>
+
+    {% for movie in movies %}
+    <div class="card">
+        <div class="movie-title">{{ movie.name }}</div>
+        <div class="movie-time">{{ movie.time }}</div>
+        <div class="price">₹ {{ movie.price }}</div>
+        <a href="/seats/{{ movie.id }}">
+            <button>Book Seats</button>
+        </a>
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}

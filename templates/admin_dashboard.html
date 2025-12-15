@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="container">
+    <h2>Admin Dashboard</h2>
+
+    <a href="/admin/add_movie"><button>Add Movie</button></a>
+
+    {% for movie in movies %}
+    <div class="card">
+        <div class="movie-title">{{ movie.name }}</div>
+        <div class="movie-time">Show Time: {{ movie.time }}</div>
+        <div class="price">₹ {{ movie.price }}</div>
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}
