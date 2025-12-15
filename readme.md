@@ -33,5 +33,5 @@ This project supports **User & Admin login**, **Movie management**, **Seat selec
 
 ---
 
-## 📁 Project Structure
+
 
